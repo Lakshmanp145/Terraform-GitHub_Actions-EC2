@@ -7,6 +7,9 @@ jobs:
       - name: checkout the code 
         uses: actions/checkout@v5
 
+      - name: setup terraform
+        uses: hashicorp/setup-terraform@v3
+
       - name: run terraform init
         run: terraform init
 
