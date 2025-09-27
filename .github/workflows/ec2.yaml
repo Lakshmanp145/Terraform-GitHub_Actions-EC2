@@ -36,3 +36,5 @@ jobs:
       - name: run terraform destroy
         if: github.event_name == 'workflow_dispatch'  # only manual trigger
         run: terraform destroy -auto-approve
+
+
